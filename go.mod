@@ -1,4 +1,4 @@
-module github.com/codingsince1985/geo-golang
+module github.com/phannam1412/geo-golang
 
 go 1.19
 
