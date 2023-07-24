@@ -1,6 +1,6 @@
 GeoService in Go
 ==
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/codingsince1985/geo-golang)](https://pkg.go.dev/github.com/codingsince1985/geo-golang)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/phannam1412/geo-golang)](https://pkg.go.dev/github.com/phannam1412/geo-golang)
 [![Build Status](https://travis-ci.org/codingsince1985/geo-golang.svg?branch=master)](https://travis-ci.org/codingsince1985/geo-golang)
 [![codecov](https://codecov.io/gh/codingsince1985/geo-golang/branch/master/graph/badge.svg)](https://codecov.io/gh/codingsince1985/geo-golang)
 [![Go Report Card](https://goreportcard.com/badge/codingsince1985/geo-golang)](https://goreportcard.com/report/codingsince1985/geo-golang)
@@ -43,25 +43,25 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/codingsince1985/geo-golang"
-	"github.com/codingsince1985/geo-golang/arcgis"
-	"github.com/codingsince1985/geo-golang/baidu"
-	"github.com/codingsince1985/geo-golang/bing"
-	"github.com/codingsince1985/geo-golang/chained"
-	"github.com/codingsince1985/geo-golang/frenchapigouv"
-	"github.com/codingsince1985/geo-golang/geocod"
-	"github.com/codingsince1985/geo-golang/google"
-	"github.com/codingsince1985/geo-golang/here"
-	"github.com/codingsince1985/geo-golang/locationiq"
-	"github.com/codingsince1985/geo-golang/mapbox"
-	"github.com/codingsince1985/geo-golang/mapquest/nominatim"
-	"github.com/codingsince1985/geo-golang/mapquest/open"
-	"github.com/codingsince1985/geo-golang/mapzen"
-	"github.com/codingsince1985/geo-golang/opencage"
-	"github.com/codingsince1985/geo-golang/openstreetmap"
-	"github.com/codingsince1985/geo-golang/pickpoint"
-	"github.com/codingsince1985/geo-golang/tomtom"
-	"github.com/codingsince1985/geo-golang/yandex"
+	"github.com/phannam1412/geo-golang"
+	"github.com/phannam1412/geo-golang/arcgis"
+	"github.com/phannam1412/geo-golang/baidu"
+	"github.com/phannam1412/geo-golang/bing"
+	"github.com/phannam1412/geo-golang/chained"
+	"github.com/phannam1412/geo-golang/frenchapigouv"
+	"github.com/phannam1412/geo-golang/geocod"
+	"github.com/phannam1412/geo-golang/google"
+	"github.com/phannam1412/geo-golang/here"
+	"github.com/phannam1412/geo-golang/locationiq"
+	"github.com/phannam1412/geo-golang/mapbox"
+	"github.com/phannam1412/geo-golang/mapquest/nominatim"
+	"github.com/phannam1412/geo-golang/mapquest/open"
+	"github.com/phannam1412/geo-golang/mapzen"
+	"github.com/phannam1412/geo-golang/opencage"
+	"github.com/phannam1412/geo-golang/openstreetmap"
+	"github.com/phannam1412/geo-golang/pickpoint"
+	"github.com/phannam1412/geo-golang/tomtom"
+	"github.com/phannam1412/geo-golang/yandex"
 )
 
 const (

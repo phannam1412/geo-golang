@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/codingsince1985/geo-golang"
-	"github.com/codingsince1985/geo-golang/osm"
+	"github.com/phannam1412/geo-golang"
+	"github.com/phannam1412/geo-golang/osm"
 )
 
 type baseURL string

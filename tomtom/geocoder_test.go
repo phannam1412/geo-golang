@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	geo "github.com/codingsince1985/geo-golang"
+	geo "github.com/phannam1412/geo-golang"
 )
 
 var key = os.Getenv("TOMTOM_API_KEY")

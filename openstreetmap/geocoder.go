@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/codingsince1985/geo-golang"
-	"github.com/codingsince1985/geo-golang/osm"
+	"github.com/phannam1412/geo-golang"
+	"github.com/phannam1412/geo-golang/osm"
 )
 
 type (
@@ -21,10 +21,10 @@ type (
 )
 
 // Geocoder constructs OpenStreetMap geocoder
-func Geocoder() geo.Geocoder { return GeocoderWithURL("https://nominatim.openstreetmap.org/") }
+func Geocoder() geo.HTTPGeocoder { return GeocoderWithURL("https://nominatim.openstreetmap.org/") }
 
 // GeocoderWithURL constructs OpenStreetMap geocoder using a custom installation of Nominatim
-func GeocoderWithURL(nominatimURL string) geo.Geocoder {
+func GeocoderWithURL(nominatimURL string) geo.HTTPGeocoder {
 	return geo.HTTPGeocoder{
 		EndpointBuilder:       baseURL(nominatimURL),
 		ResponseParserFactory: func() geo.ResponseParser { return &geocodeResponse{} },

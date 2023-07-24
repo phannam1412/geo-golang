@@ -5,7 +5,7 @@ package google
 import (
 	"fmt"
 
-	"github.com/codingsince1985/geo-golang"
+	"github.com/phannam1412/geo-golang"
 )
 
 type (

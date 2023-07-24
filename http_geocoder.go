@@ -37,10 +37,11 @@ type ResponseParser interface {
 type HTTPGeocoder struct {
 	EndpointBuilder
 	ResponseParserFactory
+	Response ResponseParser
 }
 
 // Geocode returns location for address
-func (g HTTPGeocoder) Geocode(address string) (*Location, error) {
+func (g *HTTPGeocoder) Geocode(address string) (*Location, error) {
 	responseParser := g.ResponseParserFactory()
 
 	ctx, cancel := context.WithTimeout(context.TODO(), DefaultTimeout)
@@ -59,7 +60,7 @@ func (g HTTPGeocoder) Geocode(address string) (*Location, error) {
 				e: err,
 			}
 		}
-
+		g.Response = responseParser
 		loc, err := responseParser.Location()
 		ch <- geoResp{
 			l: loc,
